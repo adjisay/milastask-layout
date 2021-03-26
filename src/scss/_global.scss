@@ -79,6 +79,12 @@ button {
   }
 }
 
+.title {
+  font-family: $r-medium;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
 .visually-hidden:not(:active):not(:focus),
 input[type="radio"].visually-hidden,
 input[type="checkbox"].visually-hidden {

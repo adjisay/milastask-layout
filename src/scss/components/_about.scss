@@ -1,0 +1,48 @@
+.about {
+  padding: 10rem 0;
+
+  background-image: linear-gradient(to right, $black 25%, transparent 25%, $white 80%);
+  
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $white;
+  }
+
+  &__left {
+    max-width: 50rem;
+    width: 100%;
+    
+  }
+
+  &__right {
+    padding-top: 7rem;
+    max-width: 59rem;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+
+  &__text {
+    margin-bottom: 3.5rem;
+    max-width: 59rem;
+
+    line-height: 2.6rem;
+    color: $dark-gray;
+  }
+
+  &__button {
+    span:nth-of-type(1) {
+      color: $white;
+
+      background-color: $black;
+    }
+
+    use {
+      fill: $black;
+    }
+  }
+}

@@ -9,3 +9,12 @@
     font-style: normal;
   }
 }
+
+// other 
+@mixin current-range($number, $width) {
+  .skills__item:nth-of-type(#{$number}) {
+    .skills__range-current {
+      width: $width;
+    }
+  } 
+}
