@@ -1,0 +1,94 @@
+.reviews {
+  padding: 17rem 0;
+
+  color: $white;
+
+  background-color: $dark;
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    padding-top: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+
+  &__description {
+    max-width: 40rem;
+
+    color: $gray;
+  }
+
+  &__slider {
+    position: relative;
+
+    padding: 6.5rem 5.5rem;
+
+    color: $black;
+
+    background-color: $white;
+    border-radius: 20px;
+  }
+
+  .slide {
+    &__text {
+      margin-bottom: 4.5rem;
+      max-width: 43rem;
+
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: $dark-gray;
+      text-align: center;
+    }
+
+    &__bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__author {
+      font-family: $r-medium;
+      line-height: 2.6rem;
+    }
+
+    &__profession {
+      font-family: $sans-pro;
+      font-size: 1.6rem;
+      color: $dark-gray;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 105px;
+  }
+
+  &__item {
+    width: 30px;
+    height: 10px;
+
+    background-color: $gray;
+
+    &--active {
+      background-color: lighten($gray, 25%);
+    }
+  }
+}
