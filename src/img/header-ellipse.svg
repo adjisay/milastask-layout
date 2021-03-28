@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93" height="220" viewBox="0 0 93 220">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0;
+        stroke: #2c2c2c;
+        stroke-linejoin: round;
+        stroke-width: 32px;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_copy" data-name="Ellipse copy" class="cls-1" cx="-17" cy="110" r="94"/>
+</svg>

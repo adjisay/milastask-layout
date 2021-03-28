@@ -1,0 +1,42 @@
+.form {  
+  &__input {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    width: 100%;
+
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: inherit;
+
+    background-color: $dark-gray;
+
+    &::placeholder {
+      font-family: inherit;
+      color: $gray;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .form__input {
+      max-width: 47.5%;
+    }
+  }
+
+  &__btn {
+    padding: 1.5rem 2rem;
+
+    font-family: $r-medium;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: $white;
+
+    background-color: $black;
+    border: 1px solid $white;
+  }
+}

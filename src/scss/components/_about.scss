@@ -1,7 +1,11 @@
 .about {
   padding: 10rem 0;
 
-  background-image: linear-gradient(to right, $black 25%, transparent 25%, $white 80%);
+  background-image: url('../img/ellipse.svg'),
+    linear-gradient(to right, $black 25%, transparent 25%, $white 80%);
+  background-repeat: no-repeat;
+  background-position: right 35% bottom, left;
+  background-size: 9rem, 100%;
   
   &__wrapper {
     display: flex;

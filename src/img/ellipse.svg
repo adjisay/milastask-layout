@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="111" viewBox="0 0 111 111">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68009e;
+        fill-opacity: 0;
+        stroke: #292929;
+        stroke-linejoin: round;
+        stroke-width: 18px;
+        opacity: 0.1;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse" class="cls-1" cx="55.5" cy="55.5" r="46.5"/>
+</svg>

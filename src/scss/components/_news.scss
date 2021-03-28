@@ -5,6 +5,10 @@
   text-align: center;
 
   background-color: $white;
+  background-image: url('../img/triangle.svg');
+  background-repeat: no-repeat;
+  background-position: left 3% bottom 17%;
+  background-size: 9rem;
 
   &__title {
     margin-bottom: 2.5rem;

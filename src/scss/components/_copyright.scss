@@ -1,0 +1,18 @@
+.copyright {
+  padding: 3rem 0;
+
+  background-color: darken($dark-gray, 25%);
+
+  & > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {    
+    font-family: $r-light;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: $gray;
+  }
+}

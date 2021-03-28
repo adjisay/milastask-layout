@@ -42,9 +42,16 @@ a {
 }
 
 button {
+  background-color: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  resize: none;
 }
 
 .container {
