@@ -104,5 +104,9 @@
     font-size: 1.6rem;
     text-transform: capitalize;
     color: #444444;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

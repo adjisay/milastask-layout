@@ -36,7 +36,16 @@
     text-transform: uppercase;
     color: $white;
 
+    transition: all .15s linear;
+
     background-color: $black;
     border: 1px solid $white;
+
+    &:hover {
+      color: $black;
+
+      background-color: $white;
+      border: 1px solid $black;
+    }
   }
 }

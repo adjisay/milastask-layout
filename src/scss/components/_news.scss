@@ -5,10 +5,11 @@
   text-align: center;
 
   background-color: $white;
-  background-image: url('../img/triangle.svg');
+  background-image: url('../img/triangle.svg'),
+                    url('../img/cross.svg');
   background-repeat: no-repeat;
-  background-position: left 3% bottom 17%;
-  background-size: 9rem;
+  background-position: left 3% bottom 17%, right 5% top 15%;
+  background-size: 9rem, 3rem;
 
   &__title {
     margin-bottom: 2.5rem;
