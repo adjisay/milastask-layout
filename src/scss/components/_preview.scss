@@ -4,6 +4,10 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $xs) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
@@ -11,6 +15,22 @@
     max-width: 53rem;
 
     text-align: center;
+
+    @media (max-width: $xl) {
+      padding-top: 10rem;
+    }
+
+    @media (max-width: $xs) {
+      transform: translateY(-60%);
+    }
+  }
+
+  &__right {
+    @media (max-width: $xs) {
+      margin: 0 auto;
+      max-width: 40rem;
+      height: auto;
+    }
   }
 
   &__title {
@@ -21,10 +41,21 @@
     font-size: 6rem;
     line-height: 6.5rem;
     color: $white;
+
+    @media (max-width: $xl) {
+      margin-bottom: 2rem;
+
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
   }
 
   &__description {
     margin-bottom: 3.5rem;
+
+    @media (max-width: $xl) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__button {
@@ -37,5 +68,14 @@
     position: absolute;
     top: 23rem;
     right: 3rem;
+
+    @media (max-width: 1300px) {
+      top: -5rem;
+      left: 1rem;
+    }
+
+    @media (max-width: $xm) {
+      top: -8.5rem;
+    }
   }
 }

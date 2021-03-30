@@ -16,11 +16,81 @@
     width: 100%;
 
     line-height: 2rem;
+
+    @media (max-width: $xm) {
+      display: none;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+
+      max-width: 100vw;
+      height: 100vh;
+
+      background-color: $dark;
+    }
+  }
+
+  &__item {
+    @media (max-width: $xm) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__link {
     &:hover {
       border-top: 2px dashed $white;
+
+      @media (max-width: $xm) {
+        border: none;
+      }
+    }
+
+    @media (max-width: $xm) {
+      font-size: 3rem;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 150;
+
+    display: none;
+
+    width: 60px;
+    height: 40px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    span, &::before, &::after {
+      display: block;
+      width: 100%;
+      height: 4px;
+
+      background-color: $white;
+      border-radius: 4px;
+    }
+
+    @media (max-width: $xm) {
+      display: block;
     }
   }
 }

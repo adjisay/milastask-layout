@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-position: right 10% top 17%;
   background-size: 9rem;
+
+  @media (max-width: $xs) {
+    padding-bottom: 5rem;
+  }
   
   &__title {
     margin-bottom: 2.5rem;
@@ -21,6 +25,10 @@
 
     line-height: 2.6rem;
     color: #262626;
+
+    @media (max-width: $xs) {
+    margin-bottom: 5rem;
+    }
   }
 
   &__list {
@@ -30,6 +38,10 @@
     justify-content: space-between;
 
     width: 100%;
+
+    @media (max-width: 1140px) {
+      justify-content: space-evenly;
+    }
   }
 
   &__item {

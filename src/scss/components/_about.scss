@@ -6,24 +6,53 @@
   background-repeat: no-repeat;
   background-position: right 35% bottom, left;
   background-size: 9rem, 100%;
+
+  @media (max-width: $xs) {
+    padding: 0;
+    margin-top: -15rem;
+
+    background-image: url('../img/ellipse.svg'), none;
+  }
   
   &__wrapper {
     display: flex;
     justify-content: space-between;
 
-    background-color: $white;
+    @media (max-width: $xs) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__left {
     max-width: 50rem;
     width: 100%;
-    
+
+    @media (max-width: 1150px) {
+      margin-right: 2.5rem;
+    }
+
+    @media (max-width: $xs) {
+      margin-right: 0;
+    }
   }
 
   &__right {
     padding-top: 7rem;
     max-width: 59rem;
     width: 100%;
+
+    @media (max-width: $xm) {
+      padding-top: 0;
+    }
+
+    @media (max-width: $xs) {
+      padding-top: 0;
+      margin-bottom: 5rem;
+
+      text-align: center;
+    }
   }
 
   &__title {
