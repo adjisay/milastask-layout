@@ -5,13 +5,30 @@
 
   background-color: $dark;
 
+  @media (max-width: $xs) {
+    padding: 5rem 0;
+  }
+
   &__columns {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $xs) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__left {
     padding-top: 10rem;
+
+    @media (max-width: $xs) {
+      margin-bottom: 2rem;
+      padding-top: 0;
+
+      text-align: center;
+    }
   }
 
   &__title {
@@ -33,6 +50,10 @@
 
     background-color: $white;
     border-radius: 20px;
+
+    @media (max-width: $xm) {
+      padding: 3.5rem 2.5rem;
+    }
   }
 
   .slide {

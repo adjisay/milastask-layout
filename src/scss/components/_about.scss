@@ -57,6 +57,10 @@
 
   &__title {
     margin-bottom: 2.5rem;
+
+    @media (max-width: 300px) {
+      font-size: 2rem;
+    }
   }
 
   &__text {

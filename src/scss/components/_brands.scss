@@ -13,11 +13,14 @@
 
   &__slider {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 
     padding: 0 1rem;
+  }
+
+  &__slide {
+    margin-right: 1rem;
   }
 
   &__image {
@@ -39,6 +42,10 @@
     justify-content: space-between;
 
     width: calc(100% - 30px);
+
+    @media (max-width: $xm) {
+      display: none;
+    }
   }
 
   &__btn {

@@ -10,10 +10,21 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 1016px) {
+      justify-content: center;
+    }
   }
 
   &__left {
     max-width: 39.5rem;
+
+    @media (max-width: 1016px) {
+      max-width: 100%;
+      margin-bottom: 3rem;
+
+      text-align: center;
+    }
   }
 
   &__title {

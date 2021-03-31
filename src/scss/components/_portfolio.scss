@@ -31,6 +31,10 @@
     
     max-width: 71rem;
 
+    @media (max-width: $xm) {
+      justify-content: space-evenly;
+    }
+
     &__link {
       font-size: 1.8rem;
       line-height: 2.6rem;
@@ -45,45 +49,115 @@
   .works {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 100%;
-
+  
     &__item {
       margin-bottom: 3rem;
-      max-width: 100%;
-      max-height: 100%;
+      margin-right: 3rem;
 
       overflow: hidden;
-    }
 
-    &__link {
+      &:nth-child(1) {
+        max-width: 43%;
+
+        @media (max-width: $xm) {
+          margin-right: 1rem;
+          max-width: 49%;
+        }
+
+        @media (max-width: $xxs) {
+          margin-right: 0;
+          max-width: 98%;
+        }
+      }
+
+      &:nth-of-type(2) {
+        max-width: 32%;
+
+        @media (max-width: $xxl) {
+          margin-right: 0;
+        }
+
+        @media (max-width: $xm) {
+          max-width: 49%;
+        }
+
+        @media (max-width: $xxs) {
+          max-width: 98%;
+          width: 98%;
+        }
+      }
+
+      &:nth-of-type(3) {
+        margin-right: 0;
+        max-width: 23.5%;
+
+        @media (max-width: $xxl) {
+          margin-right: 3rem;
+        }
+
+        @media (max-width: $xm) {
+          margin-right: 1rem;
+          max-width: 23.5%;
+        }
+
+        @media (max-width: $xxs) {
+          margin-right: 0;
+          max-width: 98%;
+          width: 98%;
+        }
+      }
+
+      &:nth-of-type(4) {
+        max-width: 56%;
+
+        @media (max-width: $xxl) {
+          max-width: 56%;
+          margin-right: 0;
+        }
+
+        @media (max-width: $xm) {
+          max-width: 74%;
+        }
+
+        @media (max-width: $xxs) {
+          max-width: 98%;
+          width: 98%;
+        }
+      }
+
+      &:nth-of-type(5) {
+        margin-right: 0;
+
+        @media (max-width: $xxl) {
+          max-width: 75%;
+          width: 100%;
+        }
+
+        @media (max-width: $xm) {
+          margin-right: 0;
+          max-width: 98%;
+        }
+      }
+
       
     }
 
-    &__image {
-      position: relative;
+    &__link {
+      display: block;
 
+      width: 100%;
+      height: 293px;
+      overflow: hidden;
+    }
+
+    &__image {
       width: 100%;
       height: 100%; 
 
       object-fit: cover;
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
-
-        width: 100%;
-        height: 100%;
-
-        background-color: rbga($dark-gray, 0.2);
-      }
     }
   }
 }
